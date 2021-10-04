@@ -13,7 +13,7 @@ class TestAPI(unittest.TestCase):
     def testUsernameLength(self): 
         self.assertEqual(getGithubRepoInfo("sdafsdlakfjsdjasdflkmsdkflaksdfskladfklsjdaklflsadklfjlsajdkfjskadfsdklfjslafljsadfklsajdlkfjslkajdfljsaldjflksjdlfjsjdafkjsjdalfksajdfkljsadlkfjlksadjfljsadlkf"),'Invalid Username')
     def testPrintSuccess(self): 
-        self.assertEqual(getGithubRepoInfo("joantubungbanua"),'Successfuly Printed!')
+        self.assertEqual(getGithubRepoInfo("joantubungbanua"),'Successfully Printed!')
     
 
 if __name__ == '__main__':

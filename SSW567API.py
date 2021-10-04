@@ -28,7 +28,7 @@ def getGithubRepoInfo(userID):
                 total += 1
             print("Commits: ") 
             print (total)
-        return("Succesfully Printed!")
+        return("Successfully Printed!")
 
        
 
