@@ -1,10 +1,6 @@
-from typing import type 
-from requests.api import get
 import unittest
-from unittest.mock import patch
 
 
-import SSW567API
 from SSW567API import getGithubRepoInfo
 
 # This code implements the unit test functionality
@@ -13,14 +9,11 @@ from SSW567API import getGithubRepoInfo
 class TestAPI(unittest.TestCase):
     # define multiple sets of tests as functions with names that begin
 
-    @patch('SSW567.getGithubRepoInfo')
-    def testUsernameInput(self, mock_getGithubRepoInfo): 
-        
+    def testUsernameInput(self): 
         self.assertEqual(getGithubRepoInfo(""),'Username Missing')
-    def testUsernameLength(self, mock_getGithubRepoInfo): 
+    def testUsernameLength(self): 
         self.assertEqual(getGithubRepoInfo("sdafsdlakfjsdjasdflkmsdkflaksdfskladfklsjdaklflsadklfjlsajdkfjskadfsdklfjslafljsadfklsajdlkfjslkajdfljsaldjflksjdlfjsjdafkjsjdalfksajdfkljsadlkfjlksadjfljsadlkf"),'Invalid Username')
-    def testPrintSuccess(self): 
-        self.assertEqual(getGithubRepoInfo("joantubungbanua"),'Successfully Printed!')
+    
     
 
 if __name__ == '__main__':
