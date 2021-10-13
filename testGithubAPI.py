@@ -1,5 +1,6 @@
 import unittest
 
+
 from SSW567API import getGithubRepoInfo
 
 # This code implements the unit test functionality
@@ -12,11 +13,10 @@ class TestAPI(unittest.TestCase):
         self.assertEqual(getGithubRepoInfo(""),'Username Missing')
     def testUsernameLength(self): 
         self.assertEqual(getGithubRepoInfo("sdafsdlakfjsdjasdflkmsdkflaksdfskladfklsjdaklflsadklfjlsajdkfjskadfsdklfjslafljsadfklsajdlkfjslkajdfljsaldjflksjdlfjsjdafkjsjdalfksajdfkljsadlkfjlksadjfljsadlkf"),'Invalid Username')
-    def testPrintSuccess(self): 
-        self.assertEqual(getGithubRepoInfo("joantubungbanua"),'Successfully Printed!')
+        
+    
     
 
 if __name__ == '__main__':
     print('Running unit tests')
     unittest.main()
-
