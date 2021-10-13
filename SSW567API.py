@@ -31,4 +31,4 @@ def getGithubRepoInfo(githubID):
             print('Repo: {} Number of commits: {}'.format(repo['name'], len(commits)))
         return results
 
-getGithubRepoInfo('joantubungbanua')
+#getGithubRepoInfo('joantubungbanua')
